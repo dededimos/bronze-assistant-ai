@@ -1,3 +1,14 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+export const metadata = {
+  title: 'Bronze Assistant',
+  description: 'AI Assistant',
+};
+
+import '../styles/globals.css';
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  );
+}
