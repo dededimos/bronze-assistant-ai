@@ -1,5 +1,5 @@
 import ChatInterface from "../components/AI/ChatInterface";
-import AIActionLog from "../components/AI/AIActionLog"; // Optional log panel
+import AIActionLog from "../components/AI/AIActionLog";
 
 export default function Home() {
   return (
@@ -8,4 +8,4 @@ export default function Home() {
       <AIActionLog />
     </main>
   );
-}
+}t
