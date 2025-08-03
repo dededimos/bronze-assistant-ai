@@ -1,6 +1,6 @@
 'use client';
 
-import AIActionLog from "../components/AI/AIActionLog.jsx";
+import { AIActionLog } from "../components/AI/AIActionLog.jsx";
 
 export default function Home() {
   return (
