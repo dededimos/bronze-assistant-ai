@@ -1,4 +1,4 @@
-'use client';
+
 
 import AIActionLog from "../components/AI/AIActionLog";
 
