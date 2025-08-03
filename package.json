@@ -1,4 +1,4 @@
-{
+{{
   "name": "bronze-assistant-ai",
   "version": "1.0.0",
   "private": true,
@@ -8,16 +8,11 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "14.2.3",
+    "next": "14.0.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.16",
-    "postcss": "^8.4.31",
+    "react-dom": "18.2.0",
     "tailwindcss": "^3.4.1",
-    "typescript": "^5.4.2",
-    "@types/react": "^18.2.21",
-    "@types/node": "20.x"
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24"
   }
 }
