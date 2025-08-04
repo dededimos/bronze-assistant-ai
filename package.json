@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postinstall": "playwright install chromium",
+    
     "start": "next start"
   },
   "dependencies": {
