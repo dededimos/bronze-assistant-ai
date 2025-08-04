@@ -1,29 +1,23 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { buildCabin } from '../../automation/buildCabin';  // <‑‑ σωστή σχετική διαδρομή
+import { buildCabin } from '../../automation/buildCabin';
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  // Επιτρέπουμε μόνο POST
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
   try {
-    // Παίρνουμε τα παραμέτρους από το body
     const params = req.body;
-
-    // Καλούμε τη συνάρτηση αυτοματισμού
     const screenshotPath = await buildCabin(params, async (choices) => {
-      // TODO: Εδώ μπορούμε αργότερα να ρωτάμε τον χρήστη αν υπάρχουν πολλαπλές επιλογές
-      return choices[0]; // προσωρινά επιλέγουμε την πρώτη
+      // TODO: integrate interactive choice via chat
+      return choices[0];
     });
 
-    // Επιστρέφουμε επιτυχία με το path του screenshot
     res.status(200).json({ screenshotPath });
   } catch (err: any) {
-    // Οποιοδήποτε σφάλμα το γυρίζουμε με 500
     res.status(500).json({ error: err.message || 'Unknown error' });
   }
 }
