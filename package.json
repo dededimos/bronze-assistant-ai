@@ -4,10 +4,9 @@
   "private": true,
   "scripts": {
      "dev": "next dev",
-     "build": "next build",
--    "postinstall": "playwright install --with-deps",
-+    "postinstall": "playwright install chromium",
-     "start": "next start"
+     "build": "next build",-    
+"postinstall": "playwright install chromium",
+    "start": "next start"
    },
   "dependencies": {
     "next": "14.2.3",
