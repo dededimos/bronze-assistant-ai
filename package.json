@@ -5,14 +5,17 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "postinstall": "playwright install --with-deps"
   },
   "dependencies": {
-    "next": "14.0.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "tailwindcss": "^3.4.1",
-    "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.24"
+    "next": "14.2.3",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "tailwindcss": "3.4.4",
+    "postcss": "8.4.24"
+  },
+  "devDependencies": {
+    "playwright": "^1.44.0"
   }
 }
